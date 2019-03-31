@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Data file processor</title>
+    <script src="Scripts/require.js"></script>
+    <script type="text/javascript">
+        require(['scripts/FileHandler', 'scripts/DataPlot'], function (FileHandler, DataPlot) {
+            let fileHandler = new FileHandler()
+            let dataPlot = new DataPlot()
+            uploadFile = function () {
+                //submit file and then execute a callback (to draw data) on the processed data
+                fileHandler.uploadFile('dataFile', 'jsonResult', function (data) { dataPlot.draw(data, 'chartContainerId') })
+            }
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <form>
+            <input type="file" id="dataFile" />
+            <input type="button" onclick="uploadFile();" value="Upload" />
+        </form>
+    </div>
+    <div id="chartContainerId">
+    </div>
+    <div id="chartContainerId">
+    </div>
+    <div id="jsonResult">
+    </div>
+</body>
+</html>
