@@ -12,9 +12,9 @@
 * [Highcharts](https://www.highcharts.com/) library is used to draw the bar chart
 * [RequireJS](https://requirejs.org/) is used to approach javascript implementation in a modular way.
 * The implementation includes all the bonus points mentioned in the task
-* Files tested are placed under `data` folder in the repository
+* Files tested are placed under [data](https://github.com/habib535/SnowChallenge/tree/master/data) folder in the repository
 * Corner cases, exception handling and logging is not implemented. Test project has only two tests at the moment.
 
 ___
 
-* All the functions are implemented in Functions.cs class
+* All the functions are implemented in [Functions.cs](https://github.com/habib535/SnowChallenge/blob/master/Functions.cs) class
